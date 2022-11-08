@@ -1,0 +1,377 @@
+:root {
+  --primary-background-color: #FFFFFF;
+  --secondary-background-color: #F5F4FA;
+  --accent-background-color: #2F303A;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --hero-text-color: #FFFFFF;
+  --accent-text-color: #2196F3;
+  --border-project-color: #EEEEEE;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;}
+
+.disable-styles {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+img {
+  display: block;
+}
+/* Header */
+
+.header {
+
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+border-bottom: solid 2px #ECECEC;
+}
+/* Logo */
+
+.logo {
+display: block;
+color: var(--accent-text-color);
+font-family: raleway;
+text-decoration: none;
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+color: var(--primary-text-color);
+margin-right: 93px;
+
+
+}
+.logo .web {
+text-decoration: none;
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+color: var(--accent-text-color);
+
+}
+
+/* Site nav */
+
+.site-nav {
+  display: flex;
+margin-left: 70px;
+
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  text-decoration: none;
+  color: var(--primary-text-color);
+
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+.site-contacts {
+  display: flex;
+}
+
+.site-contacts .contacts-list + .contacts-list {
+  margin-left: 50px;
+
+
+}
+
+.site-contacts {
+  margin-left: auto;
+}
+
+.contacts-item {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+.contacts-item:hover,
+.contacts-item:focus {
+  color: var(--accent-text-color);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+/* Hero */
+
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.hero, .footer {
+  background-color: var(--accent-background-color);
+}
+
+.hero-title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--hero-text-color);
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
+width: 696px;
+
+}
+
+.button {
+
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+text-align: center;
+letter-spacing: 0.06em;
+color: var(--hero-text-color);
+background-color: var(--accent-text-color);
+margin: 0 auto;
+display: block;
+border: 0;
+border-radius: 5px;
+cursor: pointer;
+padding: 10px 32px;
+text-align: center;
+display: inline-block;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Features */
+
+
+.features {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.features-list {
+  display: flex;
+  gap: 30px;
+}
+.features-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+
+.features-title {
+
+font-weight: 700;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--primary-text-color);
+margin-bottom: 10px;
+}
+
+.features-description {
+
+
+line-height: 1.71;
+color: var(--secondary-text-color);
+
+}
+
+/* About */
+
+.about {
+  padding-top: 0px;
+}
+.title {
+
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+color: var(--primary-text-color);
+padding-top: 0px;
+margin-bottom: 50px;
+}
+.about-list {
+  display: flex;
+  gap: 30px;
+
+}
+
+
+/* Team */
+
+.team {
+  background-color: var(--secondary-background-color);
+  text-align: center;
+}
+
+.name {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+color: var(--primary-text-color);
+}
+
+.position {
+font-size: 16px;
+line-height: 1.18;
+color: var(--secondary-text-color);
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
+
+}
+.team-item {
+  background-color: var(--primary-background-color);
+border-radius: 0px 0px 4px 4px;
+padding-bottom: 30px;
+}
+
+.name {
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .logo {
+  color: var(--hero-text-color);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.address {
+line-height: 24px;
+color: var(--hero-text-color);
+text-decoration: none;
+font-style: normal;
+}
+
+.contact {
+line-height: 1.71;
+color: rgba(255, 255, 255, 0.6);
+font-style: normal;
+text-decoration: none;
+}
+.contact:hover,
+.contact:focus {
+color: var(--accent-text-color);
+}
+
+.address-list .address-item + .address-item {
+  margin-top: 9px;
+}
+/* 2nd page - Portfolio  */
+
+.menu-button {
+  background-color: var(--secondary-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 6px 22px;
+
+}
+.menu-button:hover,
+.menu-button:focus {
+  background-color: var(--accent-text-color);
+  color: var(--hero-text-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.menu-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.case {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+  }
+
+.case-category {
+font-size: 16px;
+line-height: 1.87;
+color: var(--secondary-text-color);
+}
+
+/* projects */
+
+.projects {
+  padding-top: 50px;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+.projects-description {
+  padding: 20px 24px;
+  border: 1px solid var(--border-project-color);
+  border-top: 0px;
+}
